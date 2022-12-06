@@ -1,0 +1,13 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ;
+  font: 1rem;
+  line-height: 1.5;
+  color: white;
+  background-image: url(img/baggrund-pasta);
+}
