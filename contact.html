@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="style/contact.css" />
+    <link rel="stylesheet" href="style/overall.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/adi4qgi.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/adi4qgi.css" />
     <title>La fresca</title>
   </head>
   <header>
@@ -24,23 +27,25 @@
       <div class="grid_1-1">
         <div class="kontakt">
           <h2>Contact us</h2>
+          <form name="kontakt" netlify>
 
-          <form>
-            <!-- Formular-indhold -->
-            <div class="form-felt">
-              <label for="name">Name:</label>
-              <input placeholder="sofie" />
+            <div class="form-felt required">
+              <label for="navn">Navn</label>
+              <input type="navn" id="navn" name="navn" placeholder="Sofie" />
             </div>
-
-            <div class="form-felt">
-              <label for="email">Email:</label>
-              <input placeholder="sofie.hansen@gmail.com" />
+           
+            <div class="form-felt required">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="sofiehansen@gmail.com" />
             </div>
-
-            <div class="form-felt">
-              <textarea name="besked">Write a message here...</textarea>
+           
+            <div class="form-felt required">
+              <label for="andet">Skriv en besked her...</label>
+              <textarea name="besked" id="besked" cols="30" rows="10"></textarea>
             </div>
-          </form>
+            <div class="form-felt">
+              <button>Indsend</button>
+            </div>
         </div>
 
         <div class="oplysninger">

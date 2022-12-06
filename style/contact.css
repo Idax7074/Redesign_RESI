@@ -1,0 +1,40 @@
+form {
+  padding: 2rem;
+  background-color: rgb(86, 86, 181);
+  border-radius: 8px;
+}
+
+.form-felt label {
+  display: block;
+  
+}
+
+.form-felt {
+  margin-block: 20px;
+}
+
+form input {
+  border: none;
+  padding: 8px;
+}
+form textarea {
+  border: none;
+  padding: 8px;
+}
+
+form button {
+  border: none;
+  background-color: white;
+  padding: 8px;
+}
+
+form select {
+  border: none;
+  background-color: white;
+  padding: 8px;
+}
+
+.required label:after {
+  content: "*";
+  color: red;
+}
