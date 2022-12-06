@@ -73,13 +73,79 @@ a:visited {
 }
 
 a:hover {
-  color: yellow;
+  color: #ffff9b;
   text-decoration: underline;
-  text-decoration-color: yellow;
+  text-decoration-color: #ffff9b;
 }
 
 a:active {
   color: white;
   text-decoration: underline;
   text-decoration-color: white;
+}
+
+@media (min-width: 700px) {
+  /* header {
+    position: sticky;
+    box-shadow: 0 12px 28px 0 rgb(0 0 0 / 30%);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.4rem;
+    gap: 30px;
+    overflow-x: auto;
+  } */
+
+  .inner_main_menu {
+    margin: 0 auto;
+    width: 1000px;
+  }
+
+  .inner_main_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+  }
+
+  .inner_main_menu ul li {
+    float: none;
+    display: inline-block;
+  }
+
+  .inner_main_menu ul li:nth-child(1) {
+    float: left;
+  }
+  .inner_main_menu ul li:nth-child(2) {
+    float: left;
+  }
+
+  .inner_main_menu ul li a {
+    display: block;
+    padding: 10px 20px;
+  }
+
+  #main_menu {
+    width: 100%;
+    position: relative;
+  }
+
+  .logo_area {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 45%;
+    top: 10%;
+    content: "";
+    margin-right: 400px;
+  }
 }
