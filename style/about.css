@@ -1,4 +1,24 @@
 .grid_1-1_2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.story {
+  align-content: center;
+  padding-right: 8%;
+}
+h2 {
+  text-align: center;
+  padding-top: 8%;
+}
+.about_us {
+  align-content: center;
+  padding-left: 10%;
+}
+h1 {
+  text-align: center;
+  padding-top: 8%;
+}
+.billede_shop {
+  padding-left: 8%;
 }
