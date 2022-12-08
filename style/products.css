@@ -12,22 +12,40 @@ h2 {
   color: #0b2361;
   text-align: center;
   font-size: 25px;
+  text-decoration: overline;
   margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+h3 {
+}
+
+.tekst_produkt {
+  justify-content: center;
+  color: #0b2361;
+  font-size: 20px;
+  font-weight: bold;
+
+  margin-left: 180px;
 }
 
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 200px;
-  margin-right: 100px;
+  margin-left: 250px;
+  margin-right: 150px;
 }
 
 .menu_pasta1 {
   background-color: white;
   border: 5px#0b2361 solid;
+
   font-size: 20px;
   font-weight: 600;
   color: black;
+  font-style: italic;
+  font-weight: lighter;
+
   width: 480px;
   height: 200px;
   padding-left: 40px;
@@ -37,9 +55,13 @@ h2 {
 .menu_pasta2 {
   background-color: white;
   border: 5px#0b2361 solid;
+
   font-size: 20px;
   font-weight: 600;
   color: black;
+  font-style: italic;
+  font-weight: lighter;
+
   width: 480px;
   height: 280px;
   padding-left: 40px;
@@ -49,9 +71,13 @@ h2 {
 .menu_pasta3 {
   background-color: white;
   border: 5px#0b2361 solid;
+
   font-size: 20px;
   font-weight: 600;
   color: black;
+  font-style: italic;
+  font-weight: lighter;
+
   width: 480px;
   height: 200px;
   padding-left: 40px;
@@ -61,9 +87,13 @@ h2 {
 .menu_pasta4 {
   background-color: white;
   border: 5px#0b2361 solid;
+
   font-size: 20px;
   font-weight: 600;
   color: black;
+  font-style: italic;
+  font-weight: lighter;
+
   width: 480px;
   height: 360px;
   padding-left: 40px;
@@ -88,15 +118,4 @@ h2 {
 .grid_1-1_pasta3 {
   width: 480px;
   height: 200px;
-}
-
-.tekst_produkt {
-  margin: 50px;
-  color: #0b2361;
-  font-size: 20px;
-  margin-left: 180px;
-  background-color: white;
-  padding: 50px;
-  padding-left: 0px;
-  padding-right: 0px;
 }
