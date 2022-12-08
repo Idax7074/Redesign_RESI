@@ -6,19 +6,37 @@
 .story {
   align-content: center;
   padding-right: 8%;
+
+  border: 2px;
+  padding: 10px;
+  color: white;
+  background-color: #0b2361;
+  margin-right: 8%;
 }
+
 h2 {
   text-align: center;
   padding-top: 8%;
+  margin-bottom: 2%;
 }
 .about_us {
   align-content: center;
-  padding-left: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: white;
+  background-color: #0b2361;
+  margin-left: 8%;
 }
 h1 {
+  margin-bottom: 5%;
+  align-content: center;
   text-align: center;
   padding-top: 8%;
+  color: #0b2361;
 }
 .billede_shop {
   padding-left: 8%;
+}
+body {
+  background-image: url(../img/baggrund-pasta.webp);
 }
