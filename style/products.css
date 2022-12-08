@@ -1,0 +1,58 @@
+body {
+  background-color: rgb(219, 216, 216);
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.menu_pasta1 {
+  background-color: white;
+  border: 5px#0b2361 solid;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  width: 480px;
+  height: 200px;
+  padding-left: 40px;
+  padding-top: 30px;
+  margin-left: 50px;
+}
+
+.menu_pasta2 {
+  background-color: white;
+  border: 5px#0b2361 solid;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  width: 480px;
+  height: 280px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.menu_pasta3 {
+  background-color: white;
+  border: 5px#0b2361 solid;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  width: 480px;
+  height: 200px;
+  padding-left: 40px;
+  padding-top: 30px;
+  margin-left: 50px;
+}
+
+.menu_pasta4 {
+  background-color: white;
+  border: 5px#0b2361 solid;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  width: 480px;
+  height: 300px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
