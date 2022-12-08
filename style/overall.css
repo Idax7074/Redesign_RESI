@@ -11,8 +11,8 @@ body {
   font: 1rem;
   line-height: 2;
   color: white;
-  /* background-image: url("");
-  background-size: cover; */
+  background-image: url("image/baggrund-pasta.webp");
+  background-size: cover;
   background-color: #0b2361;
 }
 
@@ -68,8 +68,6 @@ a {
   font-size: 1.5rem;
   color: white;
   text-decoration: none;
-  /* text-decoration: underline;
-  text-decoration-color: yellow; */
 }
 
 a:link {
