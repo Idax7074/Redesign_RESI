@@ -11,7 +11,9 @@ body {
   font: 1rem;
   line-height: 2;
   color: white;
-  background-color: rgb(38, 38, 108);
+  /* background-image: url("");
+  background-size: cover; */
+  background-color: #0b2361;
 }
 
 main {
@@ -48,6 +50,14 @@ h3 {
   font-style: normal;
   text-transform: uppercase;
   font-size: 1.4rem;
+}
+
+h4 {
+  font-family: bio-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 a {

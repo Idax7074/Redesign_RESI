@@ -1,0 +1,27 @@
+/*Til index og about*/
+.grid_1-1_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/*Kun den ^ */
+
+/*Til products og contact*/
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*Kun den contact ^ */
+
+grid_1-1_pasta1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+grid_1-1_order {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  order: -1;
+}
+
+/*Products skal have alle tre*/
