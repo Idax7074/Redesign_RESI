@@ -17,15 +17,12 @@ h2 {
   margin-top: 80px;
 }
 
-h3 {
-}
-
 .tekst_produkt {
   justify-content: center;
   color: #0b2361;
   font-size: 20px;
   font-weight: bold;
-
+  max-width: 1200px;
   margin-left: 180px;
 }
 
