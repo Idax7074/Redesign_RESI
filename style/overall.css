@@ -11,8 +11,8 @@ body {
   font: 1rem;
   line-height: 2;
   color: white;
-  background-image: url("image/baggrund-pasta.webp");
-  background-size: cover;
+  /* background-image: url("../img/baggrund-pasta.webp");
+  background-size: cover; */
   background-color: #0b2361;
 }
 
@@ -92,14 +92,25 @@ a:active {
   text-decoration-color: white;
 }
 
-@media (min-width: 700px) {
-  /* header {
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: 600px) {
+  header {
     position: sticky;
-    box-shadow: 0 12px 28px 0 rgb(0 0 0 / 30%);
+    top: 0;
+    padding: 1rem 2rem;
+    box-shadow: 0 12px 28px 0 rgb(0 0 0 /30%);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    text-align: center;
+    background-color: #58656d;
+  }
+
+  header .logo a {
+    font-size: 2rem;
   }
 
   header nav ul {
@@ -111,49 +122,61 @@ a:active {
     padding-bottom: 0.4rem;
     gap: 30px;
     overflow-x: auto;
-  } */
-
-  .inner_main_menu {
-    margin: 0 auto;
-    width: 1000px;
   }
 
-  .inner_main_menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: right;
+  .logo {
+    width: 100px;
+    height: 100px;
   }
+}
 
-  .inner_main_menu ul li {
-    float: none;
-    display: inline-block;
-  }
+/*Styling af burger menu*/
 
-  .inner_main_menu ul li:nth-child(1) {
-    float: left;
-  }
-  .inner_main_menu ul li:nth-child(2) {
-    float: left;
-  }
+.banner {
+  background-color: transparent;
+  padding: 2rem;
 
-  .inner_main_menu ul li a {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.toggle-btn {
+  background: transparent;
+  text-transform: uppercase;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
     display: block;
-    padding: 10px 20px;
   }
 
-  #main_menu {
-    width: 100%;
-    position: relative;
+  .main-menu {
+    display: contents;
   }
 
-  .logo_area {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: 45%;
-    top: 10%;
-    content: "";
-    margin-right: 400px;
+  .main-menu ul {
+    display: none;
+  }
+
+  .main-menu.shown ul {
+    border-top: 1px solid #5100ca62;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
   }
 }
