@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <link rel="stylesheet" href="style/products.css" />
     <link rel="stylesheet" href="style/overall.css" />
+    <link rel="stylesheet" href="style/products.css" />
     <link rel="stylesheet" href="https://use.typekit.net/adi4qgi.css" />
     <link rel="stylesheet" href="https://use.typekit.net/adi4qgi.css" />
     <title>La fresca</title>
   </head>
-  <header>
-    <nav>
+  <header class="banner">
+    <div class="logo">
+      <a href="index.html"><img src="img/lafresca_logo.webp" alt="La fresca logo" /></a>
+    </div>
+    <nav class="main-menu">
+      <button class="toggle-btn">Menu</button>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Selection</a></li>
@@ -24,6 +28,9 @@
   <body>
     <main>
       <h1>Our pasta</h1>
+      <div class="tekst_produkt">
+        <p>Since our products are artisanal, we might not have all the options every day. DM us on Instagram or call us for info on availability. You are also more than welcome to stop by the shop, to see what our daily specials are.</p>
+      </div>
       <h2>Prices/100g</h2>
       <div class="grid_1-1">
         <div class="menu_pasta1">
@@ -31,18 +38,13 @@
           <p>- Classic______________ 24,-</p>
           <p>- Beetroot_____________ 24,-</p>
         </div>
-        <div class="grid_1-1_pasta1"></div>
-      </div>
-      <div class="grid_1-1">
-        <div class="grid_1-1_order"></div>
-        <div class="menu_pasta2">
-          <h3>Tagilatelle</h3>
-          <p>- Classic______________ 35,-</p>
-          <p>- Herbs_______________ 39,-</p>
+        <div class="grid_1-1_pasta1">
+          <img src="img/gnocchi_billede.webp" alt="gnocchi" />
         </div>
       </div>
       <div class="grid_1-1">
-        <div class="menu_pasta3">
+        <div class="grid_1-1_order_1"><img src="img/ravioli_billede.webp" alt="ravioli" /></div>
+        <div class="menu_pasta2">
           <h3>Ravioli</h3>
           <p>- Heat_________________ 65,-</p>
           <p>- Pumpkin_____________ 49,-</p>
@@ -50,10 +52,17 @@
           <p>- Ricotta & spinach______ 45,-</p>
           <p>- Mushroom___________ 49,-</p>
         </div>
-        <div class="grid_1-1_pasta3"></div>
       </div>
       <div class="grid_1-1">
-        <div class="grid_1-1_order"></div>
+        <div class="menu_pasta3">
+          <h3>Tagilatelle</h3>
+          <p>- Classic______________ 35,-</p>
+          <p>- Herbs_______________ 39,-</p>
+        </div>
+        <div class="grid_1-1_pasta3"><img src="img/lang_pasta.webp" alt="tagilatelle" /></div>
+      </div>
+      <div class="grid_1-1">
+        <div class="grid_1-1_order"><img src="img/sauce_billede.webp" alt="sauce" /></div>
         <div class="menu_pasta4">
           <h3>Sauces</h3>
           <p>- Homemade bolognese__ 43,-</p>
@@ -64,7 +73,7 @@
           <p>- Parmigiano cream_____ 45,- (90 g)</p>
         </div>
       </div>
-      <p>Since our products are artisanal, we might not have all the options every day. DM us on Instagram or call us for info on availability.</p>
+
       <div class="order-button">
         <p>Order your pasta</p>
       </div>

@@ -11,11 +11,13 @@ body {
   font: 1rem;
   line-height: 2;
   color: white;
-  background-color: rgb(38, 38, 108);
+  /* background-image: url("../img/baggrund-pasta.webp");
+  background-size: cover; */
+  background-color: #0b2361;
 }
 
 main {
-  max-width: 1500px;
+  /* max-width: 1500px; */
   margin-inline: auto;
 }
 
@@ -50,6 +52,14 @@ h3 {
   font-size: 1.4rem;
 }
 
+h4 {
+  font-family: bio-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
 a {
   font-family: bio-sans, sans-serif;
   font-weight: 600;
@@ -58,8 +68,6 @@ a {
   font-size: 1.5rem;
   color: white;
   text-decoration: none;
-  /* text-decoration: underline;
-  text-decoration-color: yellow; */
 }
 
 a:link {
@@ -73,13 +81,121 @@ a:visited {
 }
 
 a:hover {
-  color: yellow;
+  color: #ffff9b;
   text-decoration: underline;
-  text-decoration-color: yellow;
+  text-decoration-color: #ffff9b;
 }
 
 a:active {
   color: white;
   text-decoration: underline;
   text-decoration-color: white;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+button.button {
+  background-color: #ffff9b;
+  color: #0b2361;
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 15px;
+  margin-block: 15px;
+  display: inline-block;
+}
+
+button.button a {
+  color: #0b2361;
+  font-size: 1rem;
+}
+
+button.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 600px) {
+  header {
+    position: sticky;
+    top: 0;
+    padding: 1rem 2rem;
+    box-shadow: 0 12px 28px 0 rgb(0 0 0 /30%);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #0b2361;
+  }
+
+  header .logo a {
+    font-size: 2rem;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.4rem;
+    gap: 30px;
+    overflow-x: auto;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/*Styling af burger menu*/
+
+.banner {
+  /* background-color: transparent; */
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.toggle-btn {
+  background: transparent;
+  text-transform: uppercase;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    display: block;
+  }
+
+  .main-menu {
+    display: contents;
+  }
+
+  .main-menu ul {
+    display: none;
+  }
+
+  .main-menu.shown ul {
+    border-top: 1px solid #5100ca62;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+  }
 }
