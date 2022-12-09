@@ -40,3 +40,8 @@ form select {
   content: "*";
   color: red;
 }
+
+h1 {
+  align-content: center;
+  text-align: center;
+}
