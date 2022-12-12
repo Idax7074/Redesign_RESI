@@ -19,21 +19,37 @@ p {
 h1 {
   align-content: center;
   text-align: center;
+  color: #0b2361;
+}
+
+h2 {
+  color: #0b2361;
 }
 
 h3 {
   color: #0b2361;
 }
 
-.overskrift {
-  width: 100%;
-  background-image: url(../img/ravioli-background.png);
-  background-size: cover;
-  padding-block: 190px;
-}
+@media (min-width: 500px) {
+  .overskrift {
+    width: 100%;
+    background-image: url(../img/ravioli-background.png);
+    background-size: cover;
+    padding-block: 190px;
+  }
 
-.overskrift > h1 {
-  padding-top: 80px;
+  .overskrift > h1 {
+    padding-top: 80px;
+    color: white;
+  }
+
+  form {
+    margin-inline: 140px;
+  }
+
+  .oplysninger {
+    margin-inline: 140px;
+  }
 }
 
 main {
@@ -45,11 +61,42 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 500px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  a {
+    font-family: bio-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #0b2361;
+    text-decoration: none;
+  }
+
+  a:link {
+    color: #0b2361;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #0b2361;
+    text-decoration: none;
+  }
+}
+
 form {
   padding: 2rem;
   background-color: #0b2361;
   border-radius: 8px;
-  margin-inline: 140px;
 }
 
 .form-felt label {
@@ -88,7 +135,6 @@ form button {
 }
 
 .oplysninger {
-  margin-inline: 140px;
   margin-top: 50px;
 }
 
