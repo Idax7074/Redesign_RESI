@@ -1,9 +1,55 @@
+body {
+  /* Billedet */
+  background-image: url(../img/baggrund-pasta.webp);
+
+  /* Fuld højde */
+  height: 100%;
+
+  /* Parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  color: #0b2361;
+}
+
+h1 {
+  align-content: center;
+  text-align: center;
+}
+
+h3 {
+  color: #0b2361;
+}
+
+.overskrift {
+  width: 100%;
+  background-image: url(../img/ravioli-background.png);
+  background-size: cover;
+  padding-block: 190px;
+}
+
+.overskrift > h1 {
+  padding-top: 80px;
+}
+
+main {
+  max-width: 1500px;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 form {
   padding: 2rem;
-  background-color: rgb(232, 230, 230);
+  background-color: #0b2361;
   border-radius: 8px;
-  margin: 20px;
-  width: 420px;
+  margin-inline: 140px;
 }
 
 .form-felt label {
@@ -12,28 +58,28 @@ form {
 
 .form-felt {
   margin-block: 20px;
-  color: black;
+  color: white;
+  text-transform: uppercase;
 }
 
 form input {
   border: none;
+  border-radius: 2px;
   padding: 8px;
 }
 form textarea {
   border: none;
+  border-radius: 2px;
   padding: 8px;
 }
 
 form button {
+  border-radius: 2px;
   border: none;
-  background-color: white;
-  padding: 8px;
-}
-
-form select {
-  border: none;
-  background-color: white;
-  padding: 8px;
+  height: 30px;
+  width: 100px;
+  background-color: #feb05f;
+  color: white;
 }
 
 .required label:after {
@@ -41,17 +87,26 @@ form select {
   color: red;
 }
 
-h1 {
-  align-content: center;
-  text-align: center;
+.oplysninger {
+  margin-inline: 140px;
+  margin-top: 50px;
 }
 
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.background-maps {
+  background-color: lightgrey;
+  margin-top: 40px;
+  padding: 20px;
 }
 
-grid_1-1_pasta1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.maps {
+  margin-block: 10px;
+  padding-inline: 40px;
+}
+
+footer p {
+  color: white;
+}
+
+.footer a {
+  color: white;
 }
