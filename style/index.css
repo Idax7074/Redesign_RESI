@@ -2,7 +2,6 @@
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
 }
 
 .grid_1-1-1-1 {
@@ -12,6 +11,12 @@
 }
 
 /* Customize siden*/
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
 
 body {
   background-image: url("../img/baggrund-pasta.webp");
@@ -33,6 +38,7 @@ h1 {
 h2 {
   color: #0b2361;
   text-align: center;
+  font-size: 2rem;
 }
 
 h3 {
@@ -131,6 +137,10 @@ p {
   .text-box p {
     color: white;
   }
+
+  p {
+    font-size: 1.3rem;
+  }
 }
 
 /*La fresca mål*/
@@ -223,15 +233,17 @@ p {
 
 .grid_1-1 {
   margin-top: 80px;
+  margin-inline: 150px;
 }
 
 figure > img {
   width: 100%;
+  height: auto;
 }
 
 figure {
   max-width: 50ch;
-  margin-top: 20px;
+  margin-top: 40px;
   place-self: center;
   padding: 30px;
   background-color: white;
