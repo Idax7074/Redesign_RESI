@@ -119,12 +119,6 @@ button.button:hover {
 
 /*Styling af header*/
 
-@media (min-width: 500px) and (max-width: 900px) {
-  .header {
-    margin-top: -30px;
-  }
-}
-
 @media (min-width: 600px) {
   .header {
     position: fixed;
@@ -345,10 +339,8 @@ footer {
 }
 
 @media (min-width: 500px) and (max-width: 900px) {
-  .footer {
+  footer {
     width: 100%;
-    margin-bottom: 250px;
-    background-image: url("../img/footer.png");
     background-size: cover;
   }
 }
@@ -457,7 +449,6 @@ footer {
     margin-bottom: 0px;
     background-image: url("../img/footer.png");
     background-size: cover;
-    margin-bottom: 100px;
   }
   .social-links {
     margin-left: 125px;

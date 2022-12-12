@@ -253,7 +253,18 @@ figure {
 
 @media (max-width: 900px) {
   .grid_1-1 {
-    padding-inline: 15px;
+    margin-inline: 70px;
+  }
+
+  figure {
+    max-width: 50ch;
+    margin-top: 40px;
+    place-self: center;
+    padding: 30px;
+    background-color: white;
+    border: 20px solid #f09844;
+    display: grid;
+    margin-inline: 30px;
   }
 }
 
