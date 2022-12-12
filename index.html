@@ -13,7 +13,7 @@
     <title>La fresca</title>
   </head>
   <body>
-    <header class="banner">
+    <header class="banner header">
       <div class="logo">
         <a href="index.html"><img src="img/lafresca_logo.webp" alt="La fresca logo" /></a>
       </div>
@@ -30,13 +30,17 @@
     <main>
       <div class="video_loop">
         <div class="home_card">
-          <img src="img/pasta_shop.png" alt="Pasta butik" style="width: 100%" />
+          <div class="home_card-pic">
+            <img src="img/pasta_shop.png" alt="Pasta butik" style="width: 100%" />
+          </div>
           <div class="text-box">
             <h1>Ciao Copenhagen!</h1>
             <p>We are La Fresca, an authentic Italian pasta shop, where you can find all the fresh pasta and sauces that your heart desires, and cook it at home</p>
-            <button class="button">
-              <a href="https://lafresca.nemtakeaway.dk/order.php">Order your pasta</a>
-            </button>
+            <div class="button-card">
+              <button class="button">
+                <a href="https://lafresca.nemtakeaway.dk/order.php">Order your pasta</a>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -70,10 +74,12 @@
           <p>Enjoy your delicious pasta!</p>
         </div>
       </div>
-      <div class="button2">
-        <button class="button">
-          <a href="https://lafresca.nemtakeaway.dk/order.php">Order your pasta</a>
-        </button>
+      <div class="container2">
+        <div class="button2">
+          <button class="button">
+            <a href="https://lafresca.nemtakeaway.dk/order.php">Order your pasta</a>
+          </button>
+        </div>
       </div>
       <h2>Your choices</h2>
       <div class="grid_1-1">
@@ -95,8 +101,6 @@
         </figure>
       </div>
     </main>
-    <script src="javascript/login.js"></script>
-    <script src="javascript/index.js"></script>
     <footer>
       <div class="footer">
         <div class="col-1">
@@ -144,5 +148,8 @@
         </div>
       </div>
     </footer>
+    <script src="javascript/login.js"></script>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/script.js"></script>
   </body>
 </html>

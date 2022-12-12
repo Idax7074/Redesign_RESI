@@ -32,7 +32,7 @@ h1 {
   font-family: monarcha, serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -41,7 +41,7 @@ h2 {
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 h3 {
@@ -119,16 +119,28 @@ button.button:hover {
 
 /*Styling af header*/
 
+@media (min-width: 500px) and (max-width: 900px) {
+  .header {
+    margin-top: -30px;
+  }
+}
+
 @media (min-width: 600px) {
-  header {
-    position: sticky;
+  .header {
+    position: fixed;
+    width: 100%;
     top: 0;
     padding: 1rem 2rem;
-    box-shadow: 0 12px 28px 0 rgb(0 0 0 /30%);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
+    transition: all 0.5s;
+  }
+
+  .header-scrolled {
     background-color: #0b2361;
+    box-shadow: 0 12px 28px 0 rgb(0 0 0 /30%);
   }
 
   header .logo a {
@@ -171,6 +183,7 @@ button.button:hover {
 
 .toggle-btn {
   background: transparent;
+  color: #0b2361;
   text-transform: uppercase;
   border: none;
   min-width: 44px;
@@ -195,11 +208,12 @@ button.button:hover {
   }
 
   .main-menu.shown ul {
-    border-top: 1px solid #5100ca62;
+    border-top: 2px solid #0b2361;
     padding-top: 1rem;
     display: flex;
     flex: 1 1 100%;
     flex-flow: column;
+    margin-top: 20px;
   }
 }
 
@@ -211,10 +225,8 @@ button.button:hover {
 } */
 
 footer {
-  margin-top: 500px;
   width: 100%;
   padding: 100px 10% 50px 10%;
-  position: relative;
   background-image: url("../img/footer.png");
   background-size: cover;
 }
@@ -255,6 +267,7 @@ footer {
     text-transform: capitalize;
     font-size: 1.5rem;
     margin-left: 15px;
+    color: white;
   }
 
   .col-1 {
@@ -331,14 +344,16 @@ footer {
   }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 500px) and (max-width: 900px) {
   footer {
     width: 100%;
-    position: relative;
+    margin-bottom: 250px;
     background-image: url("../img/footer.png");
     background-size: cover;
   }
+}
 
+@media (max-width: 900px) {
   footer p {
     color: white;
   }
@@ -437,6 +452,13 @@ footer {
 }
 
 @media (max-width: 500px) {
+  footer {
+    width: 100%;
+    margin-bottom: 0px;
+    background-image: url("../img/footer.png");
+    background-size: cover;
+    margin-bottom: 100px;
+  }
   .social-links {
     margin-left: 125px;
     display: flex;

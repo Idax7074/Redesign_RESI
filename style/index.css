@@ -15,6 +15,14 @@
 
 body {
   background-image: url("../img/baggrund-pasta.webp");
+
+  /* Fuld højde */
+  height: 100%;
+
+  /* Parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -44,29 +52,85 @@ p {
 
 /*Store billede med tekst boks*/
 
-.home_card {
-  display: grid;
+@media (max-width: 500px) {
+  .text-box {
+    padding-inline: 15px;
+  }
+
+  .button-card {
+    padding-top: 30px;
+  }
+
+  h1 {
+    color: #0b2361;
+  }
+
+  .text-box {
+    display: grid;
+    background-color: white;
+    margin-bottom: -80px;
+    padding-top: 50px;
+  }
+
+  .text-box > h1 {
+    padding-top: 10px;
+    border-top: 2px solid #0b2361;
+  }
+
+  .text-box > p {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #0b2361;
+  }
+
+  .text-box > div {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .button-card {
+    text-align: center;
+  }
 }
 
-.home_card > * {
-  grid-row: 1;
-  grid-column: 1;
-}
+@media (min-width: 500px) {
+  h1 {
+    color: white;
+  }
 
-.text-box {
-  place-self: center;
-  background-color: #0b2361;
-  border-radius: 5px;
-  max-width: 60ch;
-  padding: 30px;
-}
+  .home_card {
+    display: grid;
+    padding-inline: 5px;
+  }
 
-.text-box p {
-  color: white;
-}
+  .home_card > * {
+    grid-row: 1;
+    grid-column: 1;
+  }
 
-button.button {
-  text-align: center;
+  .text-box {
+    place-self: center;
+    background-color: #0b2361;
+    border-radius: 5px;
+    max-width: 60ch;
+    padding: 30px;
+  }
+
+  .text-box {
+    display: grid;
+  }
+
+  .text-box > div {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .button-card {
+    text-align: center;
+  }
+
+  .text-box p {
+    color: white;
+  }
 }
 
 /*La fresca mål*/
@@ -91,6 +155,7 @@ button.button {
   place-self: center;
   max-width: 60ch;
   margin-top: 20px;
+  padding-inline: 15px;
 }
 
 /*Din mads rejse*/
@@ -132,17 +197,61 @@ button.button {
   grid-column: 2;
 }
 
+/*Stylling af knap under rejse*/
+
+.container2 {
+  width: 100%;
+  background: url(../img/wave_home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  padding-bottom: 270px;
+}
+
+.container2 > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.button2 {
+  place-self: center;
+  max-width: 60ch;
+  margin-top: 20px;
+}
+
 /*Pasta og sauce bokse*/
+
+.grid_1-1 {
+  margin-top: 80px;
+}
 
 figure > img {
   width: 100%;
 }
 
 figure {
+  max-width: 50ch;
+  margin-top: 20px;
+  place-self: center;
   padding: 30px;
   background-color: white;
   border: 20px solid #f09844;
   display: grid;
+}
+
+@media (max-width: 900px) {
+  .grid_1-1 {
+    padding-inline: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 50px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -211,8 +320,22 @@ figure {
     grid-row: 5;
     text-align: center;
   }
+
+  a {
+    font-size: 1rem;
+    color: #0b2361;
+  }
+
+  a:visited {
+    font-size: 1rem;
+    color: #0b2361;
+  }
 }
 
 footer p {
+  color: white;
+}
+
+.footer a {
   color: white;
 }
