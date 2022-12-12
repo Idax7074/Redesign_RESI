@@ -263,6 +263,7 @@ figure {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 50px;
+    margin-inline: 0px;
   }
 }
 
