@@ -2,7 +2,6 @@
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
 }
 
 .grid_1-1-1-1 {
@@ -12,6 +11,12 @@
 }
 
 /* Customize siden*/
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
 
 body {
   background-image: url("../img/baggrund-pasta.webp");
@@ -33,6 +38,7 @@ h1 {
 h2 {
   color: #0b2361;
   text-align: center;
+  font-size: 2rem;
 }
 
 h3 {
@@ -131,13 +137,17 @@ p {
   .text-box p {
     color: white;
   }
+
+  p {
+    font-size: 1.3rem;
+  }
 }
 
 /*La fresca mål*/
 
 .container {
   width: 100%;
-  background: url(../img/forside_baggrund.png);
+  background: url(../img/forside_baggrund.webp);
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -201,7 +211,7 @@ p {
 
 .container2 {
   width: 100%;
-  background: url(../img/wave_home.png);
+  background: url(../img/wave_home.webp);
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -223,15 +233,17 @@ p {
 
 .grid_1-1 {
   margin-top: 80px;
+  margin-inline: 150px;
 }
 
 figure > img {
   width: 100%;
+  height: auto;
 }
 
 figure {
   max-width: 50ch;
-  margin-top: 20px;
+  margin-top: 40px;
   place-self: center;
   padding: 30px;
   background-color: white;
@@ -241,7 +253,18 @@ figure {
 
 @media (max-width: 900px) {
   .grid_1-1 {
-    padding-inline: 15px;
+    margin-inline: 70px;
+  }
+
+  figure {
+    max-width: 50ch;
+    margin-top: 40px;
+    place-self: center;
+    padding: 30px;
+    background-color: white;
+    border: 20px solid #f09844;
+    display: grid;
+    margin-inline: 30px;
   }
 }
 
@@ -251,6 +274,7 @@ figure {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 50px;
+    margin-inline: 0px;
   }
 }
 
