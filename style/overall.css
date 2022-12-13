@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 
+html {
+  block-size: 100%;
+}
+
 body {
+  min-block-size: 100%;
   font-family: bio-sans, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -119,51 +124,102 @@ button.button:hover {
 
 /*Styling af header*/
 
-@media (min-width: 600px) {
-  .header {
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem 4rem;
+  padding: 1rem max(1rem, (100% - 700px) / 2);
+
+  transition: all 0.5s;
+}
+
+@media (min-width: 500px) {
+  header {
     position: fixed;
-    width: 100%;
-    top: 0;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-
-    transition: all 0.5s;
   }
-
   .header-scrolled {
     background-color: #0b2361;
     box-shadow: 0 12px 28px 0 rgb(0 0 0 /30%);
   }
+}
 
-  header .logo a {
-    font-size: 2rem;
+nav {
+  display: contents;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 100%;
+  gap: 0 2rem;
+  border-block-start: 2px solid #fff2;
+  padding-block-start: 1rem;
+}
+
+nav li {
+  display: grid;
+}
+
+nav a {
+  letter-spacing: 0.3px;
+  padding-block: 1rem;
+  border-radius: 6px;
+  margin-inline: -1rem;
+  padding-inline: 1rem;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 599px) {
+  button.hidden + ul {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  header {
+    justify-content: center;
   }
 
-  header nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 0.4rem;
-    gap: 30px;
-    overflow-x: auto;
+  nav,
+  nav ul {
+    display: contents;
   }
 
-  .logo {
-    width: 100px;
-    height: 100px;
+  .logo,
+  nav li {
+    text-align: center;
+    flex: 1;
+  }
+
+  nav li:is(:nth-child(1), :nth-child(2)) {
+    order: -1;
+  }
+
+  button {
+    display: none;
   }
 }
 
 /*Styling af burger menu*/
 
 .banner {
-  /* background-color: transparent; */
-  padding: 2rem;
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -191,6 +247,7 @@ button.button:hover {
 @media (max-width: 600px) {
   .toggle-btn {
     display: block;
+    margin-left: 180px;
   }
 
   .main-menu {
@@ -213,15 +270,10 @@ button.button:hover {
 
 /*Footer styling*/
 
-/* .logo-footer {
-  width: 100px;
-  height: 100px;
-} */
-
 footer {
   width: 100%;
   padding: 100px 10% 50px 10%;
-  background-image: url("../img/footer.png");
+  background-image: url("../img/footer.webp");
   background-size: cover;
 }
 
@@ -447,7 +499,7 @@ footer {
   footer {
     width: 100%;
     margin-bottom: 0px;
-    background-image: url("../img/footer.png");
+    background-image: url("../img/footer.webp");
     background-size: cover;
   }
   .social-links {
