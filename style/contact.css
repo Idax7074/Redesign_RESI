@@ -95,14 +95,14 @@ h3 {
     width: 100%;
     background-image: url(../img/grey-wave-top.webp);
     background-size: cover;
-    padding-bottom: 250px;
+    padding-bottom: 300px;
   }
 
   .bottom-wave {
     width: 100%;
     background-image: url(../img/grey-wave-bottom.webp);
     background-size: cover;
-    padding-bottom: 320px;
+    padding-bottom: 370px;
   }
 }
 
