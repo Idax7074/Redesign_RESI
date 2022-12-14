@@ -190,6 +190,10 @@ nav a {
   button.hidden + ul {
     display: none;
   }
+
+  header {
+    position: relative;
+  }
 }
 
 @media (min-width: 600px) {
@@ -210,10 +214,6 @@ nav a {
 
   nav li:is(:nth-child(1), :nth-child(2)) {
     order: -1;
-  }
-
-  button {
-    display: none;
   }
 }
 
@@ -247,7 +247,6 @@ nav a {
 @media (max-width: 600px) {
   .toggle-btn {
     display: block;
-    margin-left: 180px;
   }
 
   .main-menu {
