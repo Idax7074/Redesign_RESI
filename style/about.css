@@ -205,3 +205,83 @@ h1 {
     margin: 20px;
   }
 }
+
+@media (max-width: 900px) {
+  .grid_1-1_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .about_us {
+    align-content: center;
+    color: white;
+    background-color: #0b2361;
+    border-radius: 5px;
+    margin-left: 8%;
+    padding-inline: 20px;
+    padding-bottom: 30px;
+
+    display: grid;
+
+    margin-inline: 10px;
+  }
+
+  .about_us > * {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .about_us-style {
+    place-self: center;
+  }
+
+  .story {
+    align-content: center;
+    color: white;
+    background-color: #0b2361;
+    padding-inline: 20px;
+    padding-bottom: 20px;
+
+    display: grid;
+
+    margin-inline: 10px;
+  }
+
+  .story > * {
+    grid-column: 1;
+  }
+
+  .story-style {
+    place-self: center;
+  }
+
+  h2 {
+    text-align: center;
+    padding-top: 6%;
+    margin-bottom: 2%;
+  }
+
+  .h2-style {
+    border-bottom: 2px solid whitesmoke;
+    margin-inline: 30px;
+    margin-bottom: 30px;
+  }
+
+  .billede_shop {
+    margin-inline: 10px;
+  }
+
+  header {
+    width: 100%;
+    background-color: var(--header-color);
+  }
+
+  .overskrift {
+    margin-bottom: 40px;
+  }
+
+  .video_interview {
+    margin: 20px;
+  }
+}
