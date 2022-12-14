@@ -80,15 +80,12 @@ h3 {
   }
 
   .maps {
+    padding-top: 10px;
     gap: 20px;
   }
 
-  .butik_billede {
-    padding-left: 100px;
-  }
-
-  .maps_billede > img {
-    height: 345px;
+  .maps > div > img {
+    padding-inline: 15px;
   }
 
   .top-wave {
