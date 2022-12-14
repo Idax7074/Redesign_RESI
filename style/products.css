@@ -14,7 +14,20 @@ h1 {
   color: #0b2361;
   text-align: center;
   font-size: 3rem;
-  margin-top: 100px;
+}
+
+@media (min-width: 500px) {
+  h1 {
+    align-content: center;
+    text-align: center;
+    color: #0b2361;
+    font-size: 3rem;
+  }
+
+  .overskrift > h1 {
+    padding-top: 100px;
+    color: #0b2361;
+  }
 }
 
 h2 {
