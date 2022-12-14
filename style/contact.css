@@ -12,6 +12,10 @@ body {
   background-size: cover;
 }
 
+img {
+  border-radius: 0px;
+}
+
 p {
   color: #0b2361;
 }
@@ -31,11 +35,18 @@ h3 {
 }
 
 @media (min-width: 500px) {
+  h1 {
+    align-content: center;
+    text-align: center;
+    color: #0b2361;
+    font-size: 3rem;
+  }
+
   .overskrift {
     width: 100%;
-    background-image: url(../img/ravioli-background.png);
+    background-image: url(../img/pasta1_header.webp);
     background-size: cover;
-    padding-block: 190px;
+    padding-block: 330px;
   }
 
   .overskrift > h1 {
@@ -49,16 +60,56 @@ h3 {
 
   .oplysninger {
     margin-inline: 140px;
+    margin-top: -80px;
   }
-}
 
-main {
-  max-width: 1500px;
+  .h2-style > h2 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .h2-style {
+    border-bottom: 2px solid #0b2361;
+    margin-inline: 500px;
+  }
+
+  .background-maps {
+    background-color: lightgrey;
+  }
+
+  .maps {
+    gap: 20px;
+  }
+
+  .butik_billede {
+    padding-left: 100px;
+  }
+
+  .maps_billede > img {
+    height: 345px;
+  }
+
+  .top-wave {
+    width: 100%;
+    background-image: url(../img/grey-wave-top.webp);
+    background-size: cover;
+    padding-bottom: 250px;
+  }
+
+  .bottom-wave {
+    width: 100%;
+    background-image: url(../img/grey-wave-bottom.webp);
+    background-size: cover;
+    padding-bottom: 320px;
+  }
 }
 
 .grid_1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-top: 100px;
 }
 
 @media (max-width: 500px) {
@@ -66,10 +117,6 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-row: 1fr 1fr;
-  }
-
-  form {
-    text-align: center;
   }
 
   a {
@@ -90,6 +137,40 @@ main {
   a:visited {
     color: #0b2361;
     text-decoration: none;
+  }
+
+  form {
+    margin-inline: 10px;
+    padding: 0rem;
+  }
+
+  .oplysninger {
+    margin-inline: 10px;
+  }
+
+  .oplysninger > h2 {
+    text-align: center;
+  }
+
+  .background-maps {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .h2-style > h2 {
+    color: #0b2361;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .h2-style {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -100px;
+  }
+
+  .maps {
+    margin-inline: 10px;
   }
 }
 
@@ -114,6 +195,7 @@ form input {
   border-radius: 2px;
   padding: 8px;
 }
+
 form textarea {
   border: none;
   border-radius: 2px;
@@ -122,31 +204,16 @@ form textarea {
 
 form button {
   border-radius: 2px;
-  border: none;
+  border: 2px solid #feb05f;
   height: 30px;
   width: 100px;
-  background-color: #feb05f;
+  background-color: transparent;
   color: white;
 }
 
 .required label:after {
   content: "*";
   color: red;
-}
-
-.oplysninger {
-  margin-top: 50px;
-}
-
-.background-maps {
-  background-color: lightgrey;
-  margin-top: 40px;
-  padding: 20px;
-}
-
-.maps {
-  margin-block: 10px;
-  padding-inline: 40px;
 }
 
 footer p {

@@ -21,7 +21,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Selection</a></li>
-        <li><a href="about.html">About us</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -29,33 +29,29 @@
   <body>
     <main>
       <div class="overskrift">
-      <h1>Write to us</h1>
+        <h1>Write to us</h1>
       </div>
       <div class="grid_1-1">
         <div class="kontakt">
-          <h2>Contact us</h2>
           <form name="kontakt" netlify>
-
             <div class="form-felt required">
               <label for="navn">Navn</label>
-              <input type="navn" id="navn" name="navn" placeholder="Sofie" />
+              <input type="text" id="navn" name="navn" placeholder="Sofie" />
             </div>
-           
             <div class="form-felt required">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" placeholder="sofiehansen@gmail.com" />
             </div>
-           
             <div class="form-felt required">
               <label for="andet">Skriv en besked her...</label>
               <textarea name="besked" id="besked" cols="30" rows="10"></textarea>
             </div>
-            <div class="form-felt">
-              <button>Indsend</button>
-            </div>
+            <button type="submit">Indsend</button>
+          </form>
         </div>
 
         <div class="oplysninger">
+          <h2>Contact us</h2>
           <p>We would love to hear from you! For any questions, feedback or suggestion, don’t hesitate to reach out</p>
           <p>Jernbane Allé 35, St.Tv. 2720 Vanløse</p>
           <p>Cvr. 43010670</p>
@@ -72,12 +68,21 @@
           <p>Sunday: 12:00 - 18:00</p>
         </div>
       </div>
-    <div class="background-maps">
-     <div class="grid_1-1 maps">
-      <img src="" alt="Billede af la fresca">
-      <img src="img/laFresca-maps.webp" alt="">
-     </div>
-     </div>
+      <div class="top-wave"></div>
+      <div class="background-maps">
+        <div class="h2-style">
+          <h2>Find us here</h2>
+        </div>
+        <div class="grid_1-1 maps">
+          <div class="butik_billede">
+            <img src="img/butik-billede.webp" alt="Billede af la fresca" />
+          </div>
+          <div class="maps_billede">
+            <img src="img/laFresca-maps.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="bottom-wave"></div>
     </main>
     <footer>
       <div class="footer">
@@ -101,12 +106,12 @@
           <h5>Information</h5>
           <div class="grid_1-1-footer">
             <div class="tekst-boks1">
-              <li>Customers</li>
+              <h6>Customers</h6>
               <ul>
                 <li>+45 71 80 33 78</li>
                 <li>info@lafresca.dk</li>
               </ul>
-              <li>Business</li>
+              <h6>Business</h6>
               <ul>
                 <li>+45 20 43 65 42</li>
                 <li>business@lafresca.dk</li>
