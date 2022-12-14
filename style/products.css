@@ -9,11 +9,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 h1 {
   color: #0b2361;
   text-align: center;
   font-size: 60px;
 }
+
 h2 {
   color: #0b2361;
   text-align: center;
@@ -105,6 +107,19 @@ h2 {
   display: inline-block;
   margin-left: 650px;
   margin-bottom: 50px;
+}
+
+@media (min-width: 500px) {
+  h1 {
+    font-size: 3rem;
+    margin-top: 100px;
+  }
+  .overskrift {
+    width: 100%;
+    background-image: url(../img/pasta3_header.webp);
+    background-size: cover;
+    padding-block: 270px;
+  }
 }
 
 @media (max-width: 1200px) {
