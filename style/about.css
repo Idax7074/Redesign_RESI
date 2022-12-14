@@ -11,11 +11,10 @@ body {
 }
 
 @media (min-width: 500px) {
-    h1 {
-        font-size: 3rem;
-        margin-top: 100px;
-    }
-    }
+  h1 {
+    font-size: 3rem;
+    margin-top: 100px;
+  }
   .overskrift {
     width: 100%;
     background-image: url(../img/pasta2_header.webp);
