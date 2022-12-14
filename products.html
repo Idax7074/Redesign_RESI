@@ -9,32 +9,36 @@
     <link rel="stylesheet" href="style/products.css" />
     <link rel="stylesheet" href="https://use.typekit.net/adi4qgi.css" />
     <link rel="stylesheet" href="https://use.typekit.net/adi4qgi.css" />
+    <script src="https://kit.fontawesome.com/2efe57052b.js" crossorigin="anonymous"></script>
     <title>La fresca</title>
   </head>
-  <header class="banner">
-    <div class="logo">
-      <a href="index.html"><img src="img/lafresca_logo.webp" alt="La fresca logo" /></a>
-    </div>
-    <nav class="main-menu">
-      <button class="toggle-btn">Menu</button>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Selection</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
   <body>
+    <header class="banner header">
+      <div class="logo">
+        <a href="index.html"><img src="img/lafresca_logo.webp" alt="La fresca logo" /></a>
+      </div>
+      <nav class="main-menu">
+        <button class="toggle-btn">Menu</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Selection</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <h1>Our pasta</h1>
       <div class="tekst_produkt">
         <p>Since our products are artisanal, we might not have all the options every day. DM us on Instagram or call us for info on availability. You are also more than welcome to stop by the shop, to see what our daily specials are.</p>
+        <h2>Prices/100g</h2>
       </div>
-      <h2>Prices/100g</h2>
       <div class="grid_1-1">
         <div class="menu_pasta1">
-          <h3>Gnocchi</h3>
+          <h3 id="gnocchi">Gnocchi</h3>
+          <div class="facts">
+            <p>Gnocchi are made from cooked mashed patatoes, flour and eggs.</p>
+          </div>
           <p>- Classic______________ 24,-</p>
           <p>- Beetroot_____________ 24,-</p>
         </div>
@@ -44,18 +48,24 @@
       </div>
       <div class="grid_1-1">
         <div class="menu_pasta2">
-          <h3>Ravioli</h3>
-          <p>- Heat_________________ 65,-</p>
+          <h3 id="ravioli">Ravioli</h3>
+          <div class="facts">
+            <p>Ravioli is made by wrapping made of egg pasta that can be filled with various ingredients.</p>
+          </div>
+          <p>- Meat_________________ 65,-</p>
           <p>- Pumpkin_____________ 49,-</p>
           <p>- Truffle & cheese_______ 59,-</p>
-          <p>- Ricotta & spinach______ 45,-</p>
+          <p>- Ricotta & spinach_____ 45,-</p>
           <p>- Mushroom___________ 49,-</p>
         </div>
         <div class="grid_1-1_order_1"><img src="img/ravioli_billede.webp" alt="ravioli" /></div>
       </div>
       <div class="grid_1-1">
         <div class="menu_pasta3">
-          <h3>Tagilatelle</h3>
+          <h3 id="tagliatelle">Tagliatelle</h3>
+          <div class="facts">
+            <p>Tagliatelle is made of egg pasta that is a long, flat, ribbon-shaped pasta.</p>
+          </div>
           <p>- Classic______________ 35,-</p>
           <p>- Herbs_______________ 39,-</p>
         </div>
@@ -63,10 +73,10 @@
       </div>
       <div class="grid_1-1">
         <div class="menu_pasta4">
-          <h3>Sauces</h3>
-          <p>- Homemade bolognese__ 43,-</p>
+          <h3 id="sauce">Sauces</h3>
+          <p>- Homemade bolognese_ 43,-</p>
           <p>- Wild boar ragú________ 60,-</p>
-          <p>- Roe deer ragú_________ 60,-</p>
+          <p>- Roe deer ragú________ 60,-</p>
           <p>- Cacio & pepe_________ 65,-</p>
           <p>- Carbonara____________ 65,-</p>
           <p>- Parmigiano cream_____ 45,- (90 g)</p>
@@ -74,11 +84,60 @@
         <div class="grid_1-1_order"><img src="img/sauce_billede.webp" alt="sauce" /></div>
       </div>
 
-      <div class="button2">
-        <button class="button">
+      <div class="button-card">
+        <div class="button">
           <a href="https://lafresca.nemtakeaway.dk/order.php">Order your pasta</a>
-        </button>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer">
+        <div class="col-1">
+          <h5>Contact</h5>
+          <p>Jernbane Allé 35, St.Tv. 2720 Vanløse</p>
+          <p>Cvr. 43010670</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100081842547637"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/lafrescadk/"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-2">
+          <h5>Opening hours</h5>
+          <p>Monday - Thursday: 11:00 - 19:00</p>
+          <p>Friday: 11:00 - 18:00</p>
+          <p>Saturday: Closed</p>
+          <p>Sunday: 12:00 - 18:00</p>
+        </div>
+        <div class="col-3">
+          <h5>Information</h5>
+          <div class="grid_1-1-footer">
+            <div class="tekst-boks1">
+              <h6>Customers</h6>
+              <ul>
+                <li>+45 71 80 33 78</li>
+                <li>info@lafresca.dk</li>
+              </ul>
+              <h6>Business</h6>
+              <ul>
+                <li>+45 20 43 65 42</li>
+                <li>business@lafresca.dk</li>
+              </ul>
+            </div>
+            <div class="links">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms & conditions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-footer">
+        <div class="footer-tekst">
+          <p>Ⓒ La Fresca - 2022</p>
+          <p>By: Resi - Kea</p>
+        </div>
+      </div>
+    </footer>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/script.js"></script>
   </body>
 </html>
