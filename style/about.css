@@ -14,7 +14,6 @@ h1 {
   text-align: center;
   color: #0b2361;
   font-size: 3rem;
-  margin-top: 100px;
 }
 .video_interview {
   margin-right: 60px;
@@ -32,6 +31,18 @@ h1 {
 }
 
 @media (min-width: 500px) {
+  h1 {
+    align-content: center;
+    text-align: center;
+    color: #0b2361;
+    font-size: 3rem;
+  }
+
+  .overskrift > h1 {
+    padding-top: 100px;
+    color: #0b2361;
+  }
+
   .top-wave {
     width: 100%;
     background-image: url(../img/white-wave-top.webp);
