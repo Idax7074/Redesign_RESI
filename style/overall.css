@@ -276,6 +276,15 @@ footer {
   background-size: cover;
 }
 
+.footer div h6 {
+  font-family: bio-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  list-style: none;
+  color: #ffff9b;
+}
+
 .footer {
   padding-bottom: 10px;
   display: flex;
