@@ -11,6 +11,32 @@ body {
 }
 
 @media (min-width: 500px) {
+    h1 {
+        font-size: 3rem;
+        margin-top: 100px;
+    }
+    }
+  .overskrift {
+    width: 100%;
+    background-image: url(../img/pasta2_header.webp);
+    background-size: cover;
+    padding-block: 270px;
+  }
+
+  .top-wave {
+    width: 100%;
+    background-image: url(../img/white-wave-top.webp);
+    background-size: cover;
+    padding-bottom: 250px;
+  }
+
+  .bottom-wave {
+    width: 100%;
+    background-image: url(../img/white-wave-bottom.webp);
+    background-size: cover;
+    padding-bottom: 320px;
+  }
+
   .grid_1-1_2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
