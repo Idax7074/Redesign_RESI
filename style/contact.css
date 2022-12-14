@@ -24,6 +24,7 @@ h1 {
   align-content: center;
   text-align: center;
   color: #0b2361;
+  font-size: 3rem;
 }
 
 h2 {
@@ -34,6 +35,12 @@ h3 {
   color: #0b2361;
 }
 
+.overskrift {
+  width: 100%;
+  background-color: var(--header-color);
+  padding-block: 20px;
+}
+
 @media (min-width: 500px) {
   h1 {
     align-content: center;
@@ -42,16 +49,9 @@ h3 {
     font-size: 3rem;
   }
 
-  .overskrift {
-    width: 100%;
-    background-image: url(../img/pasta1_header.webp);
-    background-size: cover;
-    padding-block: 330px;
-  }
-
   .overskrift > h1 {
     padding-top: 80px;
-    color: white;
+    color: #0b2361;
   }
 
   form {
@@ -171,6 +171,11 @@ h3 {
 
   .maps {
     margin-inline: 10px;
+  }
+
+  header {
+    width: 100%;
+    background-color: var(--header-color);
   }
 }
 

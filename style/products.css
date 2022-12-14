@@ -13,7 +13,8 @@ body {
 h1 {
   color: #0b2361;
   text-align: center;
-  font-size: 60px;
+  font-size: 3rem;
+  margin-top: 100px;
 }
 
 h2 {
@@ -31,6 +32,7 @@ h2 {
   font-weight: bold;
   max-width: 1200px;
   margin-left: 150px;
+  margin-top: 20px;
 }
 
 .facts {
@@ -109,17 +111,10 @@ h2 {
   margin-bottom: 50px;
 }
 
-@media (min-width: 500px) {
-  h1 {
-    font-size: 3rem;
-    margin-top: 100px;
-  }
-  .overskrift {
-    width: 100%;
-    background-image: url(../img/pasta3_header.webp);
-    background-size: cover;
-    padding-block: 270px;
-  }
+.overskrift {
+  width: 100%;
+  background-color: var(--header-color);
+  padding-block: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -197,5 +192,9 @@ h2 {
   }
   .button {
     margin-left: 100px;
+  }
+  header {
+    width: 100%;
+    background-color: var(--header-color);
   }
 }

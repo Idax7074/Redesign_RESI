@@ -276,6 +276,11 @@ figure {
     padding: 50px;
     margin-inline: 0px;
   }
+
+  header {
+    width: 100%;
+    background-color: var(--header-color);
+  }
 }
 
 @media (max-width: 850px) {

@@ -6,6 +6,7 @@
 
 html {
   block-size: 100%;
+  --header-color: #e8cfa0;
 }
 
 body {
